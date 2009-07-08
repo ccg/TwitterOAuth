@@ -1,0 +1,16 @@
+import ez_setup
+ez_setup.use_setuptools()
+from setuptools import setup, find_packages
+
+setup(
+    name="twitter_oauth",
+    version="0.1",
+    packages=find_packages(),
+    install_requires = ['oauth>=1.0'],
+    author='Chad Glendenin',
+    author_email='chad@glendenin.com',
+    description='Twitter OAuth client',
+    license='GPL',
+    keywords='twitter oauth',
+    url='http://github.com/ccg/twitter_oauth/tree/master',
+)

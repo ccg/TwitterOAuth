@@ -3,7 +3,7 @@ from distutils.core import setup
 setup(
     name="twitter_oauth",
     version="0.1",
-    packages=find_packages(),
+    py_modules=['twitter_oauth'],
     install_requires = ['oauth>=1.0'],
     author='Chad Glendenin',
     author_email='chad@glendenin.com',

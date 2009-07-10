@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 
-# TODO setup.py
 # TODO unittest or doctest
 # TODO abstraction for API URLs or just type out the whole thing each time?
 # TODO docstrings

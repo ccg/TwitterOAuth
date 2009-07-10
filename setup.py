@@ -1,6 +1,4 @@
-import ez_setup
-ez_setup.use_setuptools()
-from setuptools import setup, find_packages
+from distutils.core import setup
 
 setup(
     name="twitter_oauth",

@@ -10,7 +10,6 @@ import urllib2
 import webbrowser
 import oauth.oauth as oauth
 from datetime import datetime
-from localsettings import CONSUMER_KEY, CONSUMER_SECRET
 
 class TwitterClient(oauth.OAuthClient):
     request_token_url = 'http://twitter.com/oauth/request_token'
@@ -78,7 +77,7 @@ class TwitterClient(oauth.OAuthClient):
         return response
 
 # screw it. global variables. yay!
-consumer = oauth.OAuthConsumer(CONSUMER_KEY, CONSUMER_SECRET)
+consumer = oauth.OAuthConsumer('YOUR_CONSUMER_KEY', 'YOUR_CONSUMER_SECRET')
 client = TwitterClient(consumer=consumer)
 # fill in the values here to test a saved token
 existing_access_token = oauth.OAuthToken.from_string('oauth_token_secret=...&oauth_token=...')
